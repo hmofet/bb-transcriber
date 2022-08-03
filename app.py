@@ -91,6 +91,7 @@ def transcribe_gcs(gcs_uri):
     for result in response.results:
         # The first alternative is the most likely one for this portion.
         transcript += result.alternatives[0].transcript        
+    
     render_template("index.html", recognition_output = transcript)
     return transcript
     
