@@ -11,7 +11,7 @@
    args:
    - 'run'
    - 'deploy'
-   - 'SERVICE-NAME'
+   - 'bb-transcriber'
    - '--image'
    - 'gcr.io/$PROJECT_ID/bb-transcriber:$COMMIT_SHA'
    - '--region'
